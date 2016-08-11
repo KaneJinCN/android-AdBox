@@ -1,0 +1,28 @@
+<resources>
+    <declare-styleable name="AdBox">
+        <attr name="effect" format="enum">
+            <enum name="slideLeft"  value="0" />
+            <enum name="slideRight" value="1" />
+            <enum name="slideUp"    value="2" />
+            <enum name="slideDown"  value="3" />
+            <enum name="fade"       value="4" />
+        </attr>
+
+        <!-- duration of switching  images -->
+        <attr name="duration" format="integer" />
+
+        <!-- delay between slides -->
+        <attr name="delay" format="integer" />
+
+        <!-- loop -->
+        <attr name="loop" format="boolean" />
+
+        <!-- auto play -->
+        <attr name="auto_play" format="boolean" />
+
+        <attr name="placeholder" format="reference" />
+
+
+
+    </declare-styleable>
+</resources>
