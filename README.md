@@ -1,18 +1,18 @@
 # Android广告框
 
-## Preview 效果预览
+### Preview 效果预览
 
 ![AdBox Preview Gif](https://cloud.githubusercontent.com/assets/7828293/17585743/f9aca824-5fef-11e6-97e2-16f38a21632b.gif)
 
 
-## Usage 使用方法
+### Usage 使用方法
 1. 引用AdBox Library
 
     在build.gradle中添加依赖
     ```
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'cn.kanejin.adbox:library:1.0.0@aar'
     ```
-
 
 2. 在layout里定义AdBox
     ```
@@ -59,7 +59,7 @@
 
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/java/cn/kanejin/adbox/demo/MainActivity.java)
 
-##  Attributes 参数说明
+###  Attributes 参数说明
 
 
 <table style="width:100%;">
