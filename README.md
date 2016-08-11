@@ -1,9 +1,11 @@
 # Android广告框
 
-## 效果预览
+## Preview 效果预览
+
+![AdBox Preview Gif](https://cloud.githubusercontent.com/assets/7828293/17585743/f9aca824-5fef-11e6-97e2-16f38a21632b.gif)
 
 
-## 使用方法
+## Usage 使用方法
 1. 引用AdBox Library
 
     在build.gradle中添加依赖
@@ -28,7 +30,7 @@
     ```
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/res/layout/activity_main.xml)
 
-3. 在Activity里添加Adapter和Listener
+3. 在Activity里设置Adapter和Listener
     ```
     mAdBox = (AdBox) findViewById(R.id.ad_box);
 
@@ -57,9 +59,10 @@
 
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/java/cn/kanejin/adbox/demo/MainActivity.java)
 
-##  参数说明
+##  Attributes 参数说明
 
-<table>
+
+<table style="width:100%;">
 <tr>
 <th>参数名</th><th>类型</th><th>默认值</th><th>说明</th>
 </tr>
@@ -68,14 +71,14 @@
 <td>placeholder</td>
 <td>reference</td>
 <td>&nbsp;</td>
-<td>广告图片加载时的占位图片</td>
+<td>广告加载时的占位图片</td>
 </tr>
 
 <tr>
 <td>duration</td>
 <td>integer</td>
 <td>1000</td>
-<td>广告图片切换动画时间, 单位ms</td>
+<td>广告切换动画时间, 单位ms</td>
 </tr>
 
 <tr>
@@ -89,7 +92,7 @@
 <td>loop</td>
 <td>boolean</td>
 <td>true</td>
-<td>广告是否循环播放</td>
+<td>是否循环播放</td>
 </tr>
 
 <tr>
