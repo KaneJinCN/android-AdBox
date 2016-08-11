@@ -20,6 +20,8 @@ public class DemoAdBoxAdpter extends AdBoxAdapter {
     }
 
     private void fillAdItems() {
+        List<AdItem> items = new ArrayList<>();
+
         for (int i = 0; i < 3; i++) {
 
             DemoAdItem item = new DemoAdItem();
@@ -29,7 +31,9 @@ public class DemoAdBoxAdpter extends AdBoxAdapter {
             item.setUrl("http://domain.com/ad/link/" + i);
             item.setImageUrl("http://wowslider.com/images/data/images/slide" + (i + 1) + ".png");
 
-            addItem(item);
+            items.add(item);
         }
+
+        setItems(items);
     }
 }

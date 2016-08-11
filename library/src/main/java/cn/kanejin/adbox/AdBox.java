@@ -107,7 +107,7 @@ public class AdBox extends RelativeLayout {
             mDataSetObserver = new DataSetObserver() {
                 @Override
                 public void onChanged() {
-
+                    rebuildAdBox();
                 }
             };
             mAdapter.registerDataSetObserver(mDataSetObserver);
@@ -120,6 +120,9 @@ public class AdBox extends RelativeLayout {
     }
 
     private void rebuildAdBox() {
+        boolean isRunningState = isRunning;
+        pause();
+
         removeAllViewsInLayout();
 
         for (int i = 0; i < mAdapter.getCount(); i++) {
@@ -151,6 +154,9 @@ public class AdBox extends RelativeLayout {
 
         requestLayout();
         invalidate();
+
+        if (isRunningState)
+            play();
     }
 
     public void showNextAd() {

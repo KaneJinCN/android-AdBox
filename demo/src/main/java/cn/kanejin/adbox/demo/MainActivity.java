@@ -19,16 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initAdBox();
-
-        /*
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mAdBox.showNextAd();
-
-            }
-        }, 10000);*/
-
     }
 
     private void initAdBox() {
