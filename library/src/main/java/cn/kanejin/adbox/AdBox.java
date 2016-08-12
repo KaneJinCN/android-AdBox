@@ -167,22 +167,26 @@ public class AdBox extends RelativeLayout {
             return ;
         }
 
+        // 当只有一个广告时, 不滚动广告
+        if (mCurrentAdIndex == nextIndex) {
+            return ;
+        }
+
         final View currentAd = getChildAt(mCurrentAdIndex);
 
-        AnimationSet set = new AnimationSet(true);
-        set.addAnimation(new TranslateAnimation(0f, 0f, 0f, -currentAd.getHeight()));
-        set.setDuration(mDuration);
-        set.setFillAfter(false);
-        currentAd.startAnimation(set);
-
+        AnimationSet outAnimSet = new AnimationSet(true);
+        outAnimSet.addAnimation(new TranslateAnimation(0f, 0f, 0f, -currentAd.getHeight()));
+        outAnimSet.setDuration(mDuration);
+        outAnimSet.setFillAfter(false);
+        currentAd.startAnimation(outAnimSet);
 
         final View nextAd = getChildAt(nextIndex);
 
-        AnimationSet set2 = new AnimationSet(true);
-        set2.addAnimation(new TranslateAnimation(0f, 0f, nextAd.getHeight(), 0f));
-        set2.setDuration(mDuration);
-        set2.setFillAfter(true);
-        set2.setAnimationListener(new Animation.AnimationListener() {
+        AnimationSet inAnimSet = new AnimationSet(true);
+        inAnimSet.addAnimation(new TranslateAnimation(0f, 0f, nextAd.getHeight(), 0f));
+        inAnimSet.setDuration(mDuration);
+        inAnimSet.setFillAfter(true);
+        inAnimSet.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
@@ -198,8 +202,8 @@ public class AdBox extends RelativeLayout {
 
             }
         });
-        nextAd.startAnimation(set2);
 
+        nextAd.startAnimation(inAnimSet);
     }
 
     private int nextAdIndex() {
