@@ -37,9 +37,10 @@ public abstract class AdBoxAdapter {
         return mAdItems.size();
     }
 
-    protected void setItems(List<AdItem> items) {
+    protected void setItems(List<? extends AdItem> items) {
         synchronized (mLock) {
-            this.mAdItems = items;
+            this.mAdItems.clear();
+            this.mAdItems.addAll(items);
         }
         notifyDataSetChanged();
     }
