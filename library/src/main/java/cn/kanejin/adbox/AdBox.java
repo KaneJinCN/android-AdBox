@@ -54,7 +54,7 @@ public class AdBox extends RelativeLayout {
             mDuration = a.getInteger(R.styleable.AdBox_duration, 1000);
             mDelay = a.getInteger(R.styleable.AdBox_delay, 5000);
             mLoop = a.getBoolean(R.styleable.AdBox_loop, true);
-            mAutoPlay = a.getBoolean(R.styleable.AdBox_auto_play, true);
+            mAutoPlay = a.getBoolean(R.styleable.AdBox_autoPlay, true);
 
             mPlaceholderResourceId = a.getResourceId(R.styleable.AdBox_placeholder, R.drawable.adbox_ad_placeholder);
 

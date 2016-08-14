@@ -16,6 +16,6 @@
         custom:duration="500"
         custom:delay="3000"
         custom:loop="true"
-        custom:auto_play="true" />
+        custom:autoPlay="true" />
 
 </RelativeLayout>

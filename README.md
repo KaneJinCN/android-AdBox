@@ -59,8 +59,7 @@
 
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/java/cn/kanejin/adbox/demo/MainActivity.java)
 
-##  Attributes 参数说明
-
+## Attributes 参数说明
 
 <table style="width:100%;">
 <tr>
@@ -103,3 +102,6 @@
 </tr>
 
 </table>
+
+## License 许可
+[MIT](https://github.com/KaneJinCN/android-AdBox/blob/master/LICENSE)
