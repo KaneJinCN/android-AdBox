@@ -11,7 +11,7 @@
     在build.gradle中添加依赖
     ```
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'cn.kanejin.adbox:library:1.0.0@aar'
+    compile 'cn.kanejin.adbox:library:1.0.1@aar'
     ```
 
 2. 在layout里定义AdBox
@@ -25,7 +25,7 @@
         custom:duration="500"
         custom:delay="3000"
         custom:loop="true"
-        custom:auto_play="true" />
+        custom:autoPlay="true" />
 
     ```
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/res/layout/activity_main.xml)
@@ -95,7 +95,7 @@
 </tr>
 
 <tr>
-<td>play</td>
+<td>autoPlay</td>
 <td>boolean</td>
 <td>true</td>
 <td>是否自动播放</td>
