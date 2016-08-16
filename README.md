@@ -105,3 +105,6 @@
 
 ## License 许可
 [MIT](https://github.com/KaneJinCN/android-AdBox/blob/master/LICENSE)
+
+## See Also 参阅
+[TextSlider](https://github.com/KaneJinCN/android-TextSlider)
