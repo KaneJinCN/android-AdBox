@@ -9,13 +9,13 @@
 1. 引用AdBox Library
 
     在build.gradle中添加依赖
-    ```
+    ```gradle
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'cn.kanejin.adbox:library:1.0.1@aar'
     ```
 
 2. 在layout里定义AdBox
-    ```
+    ```xml
     <cn.kanejin.adbox.AdBox
         android:id="@+id/ad_box"
         android:layout_height="80dp"
@@ -31,7 +31,7 @@
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/res/layout/activity_main.xml)
 
 3. 在Activity里设置Adapter和Listener
-    ```
+    ```java
     mAdBox = (AdBox) findViewById(R.id.ad_box);
 
     DemoAdBoxAdpter adapter = new DemoAdBoxAdpter(this);
