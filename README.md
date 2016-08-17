@@ -11,7 +11,7 @@
     在build.gradle中添加依赖
     ```gradle
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'cn.kanejin.adbox:library:1.0.1@aar'
+    compile 'cn.kanejin.adbox:library:1.0.2@aar'
     ```
 
 2. 在layout里定义AdBox
@@ -21,11 +21,11 @@
         android:layout_height="80dp"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        custom:placeholder="@drawable/demo_ad_placeholder"
-        custom:duration="500"
-        custom:delay="3000"
-        custom:loop="true"
-        custom:autoPlay="true" />
+        custom:adbox_placeholder="@drawable/demo_ad_placeholder"
+        custom:adbox_duration="500"
+        custom:adbox_delay="3000"
+        custom:adbox_loop="true"
+        custom:adbox_autoPlay="true" />
 
     ```
     [查看完整的示例代码](https://github.com/KaneJinCN/android-AdBox/blob/master/demo/src/main/res/layout/activity_main.xml)
@@ -67,35 +67,35 @@
 </tr>
 
 <tr>
-<td>placeholder</td>
+<td>adbox_placeholder</td>
 <td>reference</td>
 <td>&nbsp;</td>
 <td>广告加载时的占位图片</td>
 </tr>
 
 <tr>
-<td>duration</td>
+<td>adbox_duration</td>
 <td>integer</td>
 <td>1000</td>
 <td>广告切换动画时间, 单位ms</td>
 </tr>
 
 <tr>
-<td>delay</td>
+<td>adbox_delay</td>
 <td>integer</td>
 <td>5000</td>
 <td>广告停留时间, 单位ms</td>
 </tr>
 
 <tr>
-<td>loop</td>
+<td>adbox_loop</td>
 <td>boolean</td>
 <td>true</td>
 <td>是否循环播放</td>
 </tr>
 
 <tr>
-<td>autoPlay</td>
+<td>adbox_autoPlay</td>
 <td>boolean</td>
 <td>true</td>
 <td>是否自动播放</td>

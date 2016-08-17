@@ -49,14 +49,14 @@ public class AdBox extends RelativeLayout {
                 0, 0);
 
         try {
-            mEffect = Effect.valueOfIndex(a.getInteger(R.styleable.AdBox_effect, -1));
+            mEffect = Effect.valueOfIndex(a.getInteger(R.styleable.AdBox_adbox_effect, -1));
 
-            mDuration = a.getInteger(R.styleable.AdBox_duration, 1000);
-            mDelay = a.getInteger(R.styleable.AdBox_delay, 5000);
-            mLoop = a.getBoolean(R.styleable.AdBox_loop, true);
-            mAutoPlay = a.getBoolean(R.styleable.AdBox_autoPlay, true);
+            mDuration = a.getInteger(R.styleable.AdBox_adbox_duration, 1000);
+            mDelay = a.getInteger(R.styleable.AdBox_adbox_delay, 5000);
+            mLoop = a.getBoolean(R.styleable.AdBox_adbox_loop, true);
+            mAutoPlay = a.getBoolean(R.styleable.AdBox_adbox_autoPlay, true);
 
-            mPlaceholderResourceId = a.getResourceId(R.styleable.AdBox_placeholder, R.drawable.adbox_ad_placeholder);
+            mPlaceholderResourceId = a.getResourceId(R.styleable.AdBox_adbox_placeholder, R.drawable.adbox_ad_placeholder);
 
         } finally {
             a.recycle();

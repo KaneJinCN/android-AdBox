@@ -12,10 +12,10 @@
         android:layout_height="80dp"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        custom:placeholder="@drawable/demo_ad_placeholder"
-        custom:duration="500"
-        custom:delay="3000"
-        custom:loop="true"
-        custom:autoPlay="true" />
+        custom:adbox_placeholder="@drawable/demo_ad_placeholder"
+        custom:adbox_duration="500"
+        custom:adbox_delay="3000"
+        custom:adbox_loop="true"
+        custom:adbox_autoPlay="true" />
 
 </RelativeLayout>
