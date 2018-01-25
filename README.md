@@ -11,7 +11,7 @@
     在build.gradle中添加依赖
     ```gradle
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'cn.kanejin.adbox:library:1.0.2@aar'
+    compile 'cn.kanejin.adbox:library:1.0.3@aar'
     ```
 
 2. 在layout里定义AdBox
